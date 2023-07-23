@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EA5A6E6F-8F01-4D5F-8C6A-FB41212C90C3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>otobüsbilet</RootNamespace>
+    <AssemblyName>otobüsbilet</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="biletotoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>biletotoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="biletotoDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>biletotoDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="biletotoDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>biletotoDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Bilet_OtomasyonDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bilet_OtomasyonDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anasayfa.Designer.cs">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelKontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelKontrol.Designer.cs">
+      <DependentUpon>PersonelKontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BiletİptalveGüncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BiletİptalveGüncelleme.Designer.cs">
+      <DependentUpon>BiletİptalveGüncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelKayıt.Designer.cs">
+      <DependentUpon>PersonelKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelGiriş.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelGiriş.Designer.cs">
+      <DependentUpon>PersonelGiriş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelEkranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelEkranı.Designer.cs">
+      <DependentUpon>PersonelEkranı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminGiriş.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGiriş.Designer.cs">
+      <DependentUpon>AdminGiriş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPaneli.Designer.cs">
+      <DependentUpon>AdminPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BiletSatınAlma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BiletSatınAlma.Designer.cs">
+      <DependentUpon>BiletSatınAlma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KoltukDüzeni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KoltukDüzeni.Designer.cs">
+      <DependentUpon>KoltukDüzeni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Anasayfa.resx">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelKontrol.resx">
+      <DependentUpon>PersonelKontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BiletİptalveGüncelleme.resx">
+      <DependentUpon>BiletİptalveGüncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelKayıt.resx">
+      <DependentUpon>PersonelKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelGiriş.resx">
+      <DependentUpon>PersonelGiriş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelEkranı.resx">
+      <DependentUpon>PersonelEkranı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminGiriş.resx">
+      <DependentUpon>AdminGiriş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPaneli.resx">
+      <DependentUpon>AdminPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BiletSatınAlma.resx">
+      <DependentUpon>BiletSatınAlma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KoltukDüzeni.resx">
+      <DependentUpon>KoltukDüzeni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="biletotoDataSet.xsc">
+      <DependentUpon>biletotoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="biletotoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>biletotoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="biletotoDataSet.xss">
+      <DependentUpon>biletotoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="biletotoDataSet1.xsc">
+      <DependentUpon>biletotoDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="biletotoDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>biletotoDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="biletotoDataSet1.xss">
+      <DependentUpon>biletotoDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="biletotoDataSet2.xsc">
+      <DependentUpon>biletotoDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="biletotoDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>biletotoDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="biletotoDataSet2.xss">
+      <DependentUpon>biletotoDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Bilet_OtomasyonDataSet.xsc">
+      <DependentUpon>Bilet_OtomasyonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Bilet_OtomasyonDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Bilet_OtomasyonDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Bilet_OtomasyonDataSet.xss">
+      <DependentUpon>Bilet_OtomasyonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\315-sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luks-artvin-seyahat-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\315-sm1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bilet Otomasyon.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="biletoto.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\p.png" />
+    <None Include="Resources\a.png" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\seat.png" />
+    <None Include="Resources\bin.png" />
+    <None Include="Resources\new-document.png" />
+    <None Include="Resources\floppy-disk.png" />
+    <None Include="Resources\software-engineer.png" />
+    <None Include="Resources\register.png" />
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
